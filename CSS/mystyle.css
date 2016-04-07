@@ -1,0 +1,64 @@
+body{
+	margin: 0 auto;
+}
+
+header, div, footer{
+	border: 2px solid black;
+	margin: 2%;
+}
+
+/*header{
+	height: 50px;
+}*/
+
+ul{
+	overflow: hidden;
+}
+li, #right{ 
+	width: 80px;
+	height: 36px;
+	border: 2px solid black;
+	margin: 5px;
+	float: left;
+}
+
+header{
+	overflow: hidden;
+}
+#right{display: none; float: right;}
+
+#one{width: 96%;
+	height:250px;
+}
+
+container div{width: 20%;
+	height: 120px;
+	display: inline-block;
+}
+
+/*footer{
+	height: 550px;
+}
+*/
+footer div{width: 28%;
+	height:150px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 500px){
+	header, div, footer{
+		width: 96%;
+		border: 2px solid black;
+		margin: 2%;
+
+}
+	footer div, container div{
+			width: 96%;
+		}
+	#right {display: block;}
+	ul {display:none;}
+	li {width: 96%; float: none;}
+	nav{clear: both;}
+	#five{display: none;}
+
+}
